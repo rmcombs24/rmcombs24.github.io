@@ -1,0 +1,6 @@
+.btn-secondary:hover {
+    color: #fff;
+    text-shadow: none;
+    background-color: #007bff;
+    border: .05rem solid #007bff;
+}
