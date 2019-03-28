@@ -9,29 +9,14 @@
     <meta name="generator" content="Jekyll v3.8.5">
     <title>Robert Combs · Projects</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
-
     <!-- Bootstrap core CSS --> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
+    <script src="js\lightbox.js"></script>
+    
     <!-- Custom styles for this template -->
     <link href="css\album.css" rel="stylesheet">
+    <link href="css\lightbox.css" rel="stylesheet">
+
   </head>
   <body>
     <header>
@@ -87,67 +72,43 @@
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="openModal(); currentSlide(1);">View</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Download</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-
-        <!-- The Modal/Lightbox -->
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
-      <img src="img1_wide.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 4</div>
-      <img src="img2_wide.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 4</div>
-      <img src="img3_wide.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">4 / 4</div>
-      <img src="img4_wide.jpg" style="width:100%">
-    </div>
-
-    <!-- Next/previous controls -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <!-- Caption text -->
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
-    <!-- Thumbnail image controls -->
-    <div class="column">
-      <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
-    </div>
-  </div>
-</div>
+      </div>
+        <div id="Modal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+        
+            <div class="Slides">
+              <div class="numbertext">1 / 4</div>
+              <img src="https://i.imgur.com/7Wj6p9q.png" style="width:100%">
+            </div>
+        
+            <div class="Slides">
+              <div class="numbertext">2 / 4</div>
+              <img src="https://i.imgur.com/QPOWsgF.png" style="width:100%">
+            </div>
+        
+            <div class="Slides">
+              <div class="numbertext">3 / 4</div>
+              <img src="https://i.imgur.com/YMGtTlR.png" style="width:100%">
+            </div>
+        
+            <div class="Slides">
+              <div class="numbertext">4 / 4</div>
+              <img src="https://i.imgur.com/Qt0yQ4U.png" style="width:100%">
+            </div>
+        
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="slidesNav(-1)">&#10094;</a>
+            <a class="next" onclick="slidesNav(1)">&#10095;</a>
+          </div>
+        </div>
 </main>
 
 <footer class="text-muted bg-dark">
