@@ -9,14 +9,35 @@
     <meta name="generator" content="Jekyll v3.8.5">
     <title>Robert Combs · Projects</title>
 
+    <!-- Bootstrap core CSS --> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="js\lightbox.js"></script>
+    
+    <!-- Custom styles for this template -->
     <link href="css\album.css" rel="stylesheet">
     <link href="css\lightbox.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <script src="js\lightbox.js"></script>
   </head>
   <body>
     <header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Follow on Twitter</a></li>
+            <li><a href="#" class="text-white">Like on Facebook</a></li>
+            <li><a href="#" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="navbar navbar-dark bg-dark shadow-sm">
     <div class="container d-flex justify-content-between bg-dark">
       <a href="#" class="navbar-brand d-flex align-items-center">
@@ -57,8 +78,7 @@
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary" onclick="openModal(); currentSlide(1);">View</button>
-                  <a class="btn btn-sm btn-outline-secondary" href="https://github.com/rmcombs24/Projects/tree/master/Windows/MassMediaEditor" >GitHub</a>
-                  <a class="btn btn-sm btn-outline-secondary" href="https://drive.google.com/open?id=1XdN91l5k0zEVmAJNt-L9DfczFVM_ne02" >Download</a>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Download</button>
                 </div>
               </div>
             </div>
