@@ -1,20 +1,19 @@
 
 // Open the Modal
 function openModal() {
-  alert("opening lightbox");
-  document.getElementById('myModal').style.display = "block";
+  document.getElementById('Modal').style.display = "block";
 }
 
 // Close the Modal
 function closeModal() {
-  document.getElementById('myModal').style.display = "none";
+  document.getElementById('Modal').style.display = "none";
 }
 
 var slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
-function plusSlides(n) {
+function slidesNav(n) {
   showSlides(slideIndex += n);
 }
 
@@ -26,7 +25,6 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("Slides");
-  var dots = document.getElementsByClassName("demo");
   var captionText = document.getElementById("caption");
 
   if (n > slides.length){
@@ -41,11 +39,5 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }
 
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
 }
